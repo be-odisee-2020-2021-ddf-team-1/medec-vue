@@ -18,7 +18,7 @@
 <template>
     <div id="app">
         <div id="nav">
-            <router-link to="/Create">Create</router-link> |
+            <router-link to="/create">Create</router-link> |
             <router-link to="/">Overview</router-link>
         </div>
         <router-view/>

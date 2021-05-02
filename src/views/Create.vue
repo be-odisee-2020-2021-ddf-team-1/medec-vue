@@ -11,7 +11,7 @@
     import CreateBesteldToestel from '../components/CreateBesteldToestel.vue'
 
     export default {
-        name: 'BesteldToestel',
+        name: 'create',
         components: {
             CreateBesteldToestel
         }

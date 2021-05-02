@@ -11,7 +11,7 @@
     import BesteldToestel from '../components/BesteldToestel.vue'
 
     export default {
-        name: 'BesteldToestel',
+        name: 'Overview',
         components: {
             BesteldToestel
         }

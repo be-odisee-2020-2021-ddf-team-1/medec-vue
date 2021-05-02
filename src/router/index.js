@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Overview from "../views/Overview";
-import Create from "../views/Create";
+import Overview from "../views/Overview"
+import Create from "../views/Create"
 
 Vue.use(VueRouter);
 
@@ -13,7 +13,7 @@ const routes = [
     },
     {
         path: '/Create',
-        name: 'Create',
+        name: 'create',
         component: Create
     },
     {
