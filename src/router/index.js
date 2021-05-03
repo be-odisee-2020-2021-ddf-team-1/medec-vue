@@ -2,6 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Overview from "../views/Overview"
 import Create from "../views/Create"
+import Details from "../views/Edit"
+import { BootstrapVue } from 'bootstrap-vue'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// Make BootstrapVue available throughout your project
+Vue.use(BootstrapVue)
 
 Vue.use(VueRouter);
 
@@ -13,8 +19,13 @@ const routes = [
     },
     {
         path: '/Create',
-        name: 'create',
+        name: 'Create',
         component: Create
+    },
+    {
+        path: '/Details/:besteldToestelId',
+        name: 'details',
+        component: Details
     },
     {
         path: '/BesteldToestel/:entryId',

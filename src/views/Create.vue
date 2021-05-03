@@ -1,5 +1,5 @@
 <template>
-    <div id="create">
+    <div class="container" id="create">
         <h1> Create </h1>
 
         <CreateBesteldToestel />

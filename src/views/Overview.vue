@@ -1,7 +1,6 @@
 <template>
-    <div id="overview">
-    <h1> Overview van bestelde toestellen</h1>
-
+    <div class="container" id="overview">
+    <h4> Overzicht van besteld toestellen</h4>
         <BesteldToestel />
 
     </div>
