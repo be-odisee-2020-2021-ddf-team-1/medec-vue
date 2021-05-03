@@ -5,9 +5,10 @@ import Create from "../views/Create"
 import Details from "../views/Edit"
 import { BootstrapVue } from 'bootstrap-vue'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import NewWaardebon from "../components/NewWaardebon";
 
 // Make BootstrapVue available throughout your project
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue);
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,11 @@ const routes = [
         path: '/',
         name: 'Overview',
         component: Overview
+    },
+    {
+        path: '/Waardebon',
+        name: 'Waardebon',
+        component: NewWaardebon
     },
     {
         path: '/Create',

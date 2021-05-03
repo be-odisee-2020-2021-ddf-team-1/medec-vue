@@ -1,6 +1,7 @@
 <template>
     <div id="BesteldToestel" class="container mt-3">
         <router-link to="/Create" class="btn btn-primary mb-3" tag="button">New toestel</router-link>
+        <router-link to="/Waardebon" class="btn btn-primary mb-3" tag="button">Waardebon</router-link>
         <button @click="deleteToestel" class="btn btn-danger mx-3 p-2 float-right">Delete</button>
         <button @click="toDetails" class="btn btn-secondary mx-3 p-2 float-right">Details</button>
 

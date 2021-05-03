@@ -5,17 +5,14 @@
         </p>
         <form class="w-50" @submit.prevent="create">
             <label for="naam">Naam:</label><br>
-            <input type="text" class="form-control" v-model="besteldToestel.naam" id="naam" name="naam"
-                   placeholder="Toestelnaam"><br>
+            <input type="text" class="form-control" v-model="besteldToestel.naam" id="naam" name="naam" placeholder="Toestelnaam"><br>
             <label for="aankoopdatum">AankoopDatum:</label><br>
-            <input type="date" class="form-control" v-model="besteldToestel.aankoopdatum" id="aankoopdatum"
-                   name="aankoopdatum"><br>
+            <input type="date" class="form-control" v-model="besteldToestel.aankoopdatum" id="aankoopdatum" name="aankoopdatum"><br>
             <label for="prijs">Prijs:</label><br>
             <input type="number" class="form-control" v-model="besteldToestel.prijs" step="any" id="prijs" name="prijs"><br><br>
             <input type="submit" class="btn btn-primary" value="Submit">
         </form>
     </div>
-
 </template>
 
 
