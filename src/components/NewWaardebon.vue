@@ -55,14 +55,12 @@
                         this.showDone=true;
                         this.showInfo=false;
                         document.getElementById("showForm").style.display="none";
-                        alert("succes");
 
                         // success
                         console.log(response);
 
                     })
                     .catch(response => {
-                        alert("error");
                     //error
                         console.log(response)
                     })

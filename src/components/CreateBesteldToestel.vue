@@ -66,7 +66,9 @@
                         console.log(response);
                         console.log(response.status);
                         if (response.status === 200) {
-                            this.toOverview();
+                            this.$router.push({name: 'Waardebon'}, () => {
+                                this.$router.go()
+                            })
                         } else if (response.status === 500) {
                             // ---redirect naar 404 view
                         }
