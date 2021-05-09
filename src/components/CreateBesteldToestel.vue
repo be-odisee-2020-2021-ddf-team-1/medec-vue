@@ -43,6 +43,7 @@
                 //console.log(this.$route.params.besteldToestelId + 'heyyyy')
                 this.getToestelById(this.$route.params.besteldToestelId)
             }
+
         },
         mounted() {
             // Bij opstart....

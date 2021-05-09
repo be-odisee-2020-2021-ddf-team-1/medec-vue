@@ -2,8 +2,7 @@
     <div id="app">
         <div id="nav">
             <router-link to="/create">Create</router-link> |
-            <router-link to="/">Overview</router-link> |
-            <router-link to="/Waardebon">Waardebon</router-link>
+            <router-link to="/">Overview</router-link>
         </div>
         <router-view/>
     </div>
