@@ -49,7 +49,9 @@ export default {
           (response) => (
             (this.planningtest = response.data),
             (this.status = response.status),
-            console.log(response)
+            console.log("xxxxxxyyyyyyy"),
+            console.log(response.data),
+            console.log(this.planningtest)
           )
         )
         .catch(
@@ -59,7 +61,6 @@ export default {
             (this.errorMsg = error.response.data.message)
           )
         );
-      console.log(this.planningtest);
     },
     navigateToCreate() {
       this.$router.push({ name: "Create" }, () => {
