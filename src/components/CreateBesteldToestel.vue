@@ -99,7 +99,7 @@ export default {
 
       this.getToestelById(this.$route.params.besteldToestelId);
       this.planningId = this.besteldToestel.planningId;
-      this.planning = this.getPlanningById(this.$route.params.besteldToestelId);
+      //this.planning = this.getPlanningById(this.$route.params.besteldToestelId);
     }
   },
   mounted() {
@@ -124,30 +124,9 @@ export default {
         .then((response) => {
           this.message = response.data;
           if (response.status === 200) {
-            this.$router.push({ name: "Waardebon" }, () => {
+            this.$router.push({ name: "Overview" }, () => {
               this.$router.go();
             });
-          } else if (response.status === 500) {
-            // ---redirect naar 404 view
-          }
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-    },
-
-    createPlanning() {
-      const url = "http://localhost:8082/planning/createPlanning";
-      const headers = {
-        withCredentials: true,
-      };
-
-      axios
-        .post(url, this.planning, headers)
-        .then((response) => {
-          this.message = response.data;
-          if (response.status === 200) {
-            window.location.reload();
           } else if (response.status === 500) {
             // ---redirect naar 404 view
           }
@@ -163,8 +142,8 @@ export default {
         this.$router.go();
       });
     },
-    getPlanningById(toestelId) {
-      this.url = "http://localhost:8082/planning/" + toestelId;
+    getPlanningById(planningId) {
+      this.url = "http://localhost:8082/planning/" + planningId;
 
       axios
         .get(this.url)
@@ -189,6 +168,7 @@ export default {
         .then((response) => {
           this.toEditToestel = response.data;
           this.planningId = this.toEditToestel.planningId;
+          this.getPlanningById(this.planningId);
           this.isLoaded = true;
           if (response.status === 204) {
             // entry not found
